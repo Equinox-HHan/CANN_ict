@@ -21,6 +21,8 @@
 
 struct AddCustomTemplateTilingData {
     uint32_t size;
+    uint32_t totalLength;
+    uint32_t tileNum;
 };
 
 #endif // ADD_CUSTOM_TEMPLATE_TILING_H

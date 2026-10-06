@@ -13,6 +13,8 @@ static ge::graphStatus TilingFunc(gert::TilingContext* context)
   for (int i = 0; i < x1_shape->GetStorageShape().GetDimNum(); i++)
     data_sz *= x1_shape->GetStorageShape().GetDim(i);
   tiling->size = data_sz;
+  tiling->totalLength = data_sz;
+  tiling->tileNum = 8;
   context->SetBlockDim(8);
   size_t *currentWorkspace = context->GetWorkspaceSizes(1);
   currentWorkspace[0] = 0;

@@ -78,10 +78,10 @@ private:
 
 
 }*/
- __global__ __aicore__ void add_custom_template(GM_ADDR x, GM_ADDR y, GM_ADDR z, GM_ADDR workspace, GM_ADDR tiling)
+extern "C" __global__ __aicore__ void add_custom_template(GM_ADDR x, GM_ADDR y, GM_ADDR z, GM_ADDR workspace, GM_ADDR tiling)
 {
-    REGISTER_TILING_DEFAULT(TilingDataTemplate);
-    GET_TILING_DATA_WITH_STRUCT(TilingDataTemplate, tiling_data, tiling);
+    REGISTER_TILING_DEFAULT(AddCustomTemplateTilingData);
+    GET_TILING_DATA(tiling_data, tiling);
     KernelAdd<DTYPE_X, DTYPE_Y, DTYPE_Z> op;
     op.Init(x, y, z, tiling_data.totalLength, tiling_data.tileNum);
     op.Process();
