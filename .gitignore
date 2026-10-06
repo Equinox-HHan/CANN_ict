@@ -1,0 +1,37 @@
+# 编译与构建产物
+**/build/
+**/build_out/
+**/*.o
+**/*.so
+**/*.a
+**/*.run
+**/*.bin
+**/*.fatbin
+
+# Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+.env/
+env/
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE 与编辑器临时文件
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# CANN / 昇腾运行时临时日志与生成代码
+kernel_meta/
+cache/
+fusion_result/
+*.log

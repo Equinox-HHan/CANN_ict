@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "WSL-AscendC",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/.ascend_headers/**",
+                "/home/equinoxmaple/ascend_headers/**"
+            ],
+            "defines": [
+                "__aicore__=",
+                "__global__=",
+                "__gm__=",
+                "GM_ADDR=void*"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
