@@ -1,0 +1,39 @@
+[{
+    "op": "AddCustomTemplate",
+    "input_desc": [{
+            "name": "x",
+            "param_type": "required",
+            "format": ["ND", "ND"],
+            "type": ["float16", "float"]
+        },
+        {
+            "name": "y",
+            "param_type": "required",
+            "format": ["ND", "ND"],
+            "type": ["float16", "float"]
+        }
+    ],
+    "output_desc": [{
+        "name": "z",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float16", "float"]
+    }]
+    /*
+    "attr":[
+            {
+                "name":"max",
+                "type":"float",
+                "param_type": "optional",
+                "default_value":0
+            },
+            {
+                "name":"min",
+                "type":"float",
+                "param_type": "optional",
+                "default_value":0
+            }
+        ]
+    */    
+}]
+
